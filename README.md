@@ -19,3 +19,14 @@ No, putting all the functions inside the same service is not the recommended app
 
 Another way to handle room changes without impacting previous bookings is to use an immutable booking record. Instead of modifying the existing booking, you can create a new booking with the updated room and mark the old booking as changed or cancelled. This approach preserves the history of all bookings and ensures data integrity. My recommendation is to avoid mutating critical booking data directly, especially if it affects historical records. Maintaining an audit trail by creating new records for changes is a best practice in systems where historical accuracy and traceability are important, such as hotel reservation systems.    
 
+## Test
+
+### Compile and Test
+```bash
+mvn clean compile test
+```
+### Run Tests
+```bash
+mvn test
+```
+

@@ -1,8 +1,9 @@
-package services;
 
 import entities.RoomType;
 import entities.Booking;
 import org.junit.jupiter.api.Test;
+import services.Service;
+
 import java.text.SimpleDateFormat;
 import static org.junit.jupiter.api.Assertions.*;
 
